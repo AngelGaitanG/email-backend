@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #18181a; /* Verde claro */
+        }
+        .container {
+            text-align: center;
+            background: #eeeeeebe; /* Blanco */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(172, 255, 47, 0.534);
+            max-width: 500px;
+            margin: 0 20px;
+        }
+        h1 {
+            color: #2e7d32; /* Verde oscuro */
+        }
+        p {
+            color: #4caf50; /* Verde medio */
+        }
+        .code-block {
+            background-color: #f1f8e9; /* Fondo verde muy claro */
+            color: #2e7d32; /* Verde oscuro */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #c5e1a5; /* Borde verde claro */
+            margin-top: 10px;
+            text-align: left;
+            font-family: "Courier New", Courier, monospace; /* Fuente monoespaciada */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Bienvenido!</h1>
+        <p>Para usar esta aplicación, debes hacer una petición HTTP (POST) a la URL:</p>
+        <p class="code-block">https://email-backend-w73h.onrender.com/send-email</p>
+        <p>El cuerpo de la petición debe ser el siguiente:</p>
+        <div class="code-block">
+            {
+                "name": "nombre",<br>
+                "email": "email",<br>
+                "message": "mensaje"
+            }
+        </div>
+    </div>
+</body>
+</html>
