@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
 
